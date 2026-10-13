@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepTrack | Placement Preparation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>PrepTrack</h1>
+        <span>Placement Preparation Portal</span>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="tag">YOUR PLACEMENT JOURNEY STARTS HERE</p>
+            <h2>Prepare. Practice. Progress.</h2>
+            <p>Build your technical skills and get ready for placements.</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3 id="completed">0</h3>
+                <p>Quizzes Completed</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="score">0%</h3>
+                <p>Average Score</p>
+            </div>
+            <div class="stat-card">
+                <h3>7</h3>
+                <p>Practice Sections</p>
+            </div>
+        </section>
+
+        <section class="subjects">
+            <h2>Choose Your Practice Section</h2>
+            <div class="grid">
+                <article class="subject-card">
+                    <div class="emoji">☕</div>
+                    <h3>Core Java</h3>
+                    <p>OOP, strings, collections and exceptions.</p>
+                    <button onclick="startQuiz('Core Java')">Start Practice</button>
+                </article>
+
+                <article class="subject-card">
+                    <div class="emoji">💻</div>
+                    <h3>DSA & Coding</h3>
+                    <p>Arrays, strings, searching and sorting.</p>
+                    <button onclick="startQuiz('DSA & Coding')">Start Practice</button>
+                </article>
+
+                <article class="subject-card">
+                    <div class="emoji">🗄️</div>
+                    <h3>DBMS & SQL</h3>
+                    <p>Queries, joins, keys and normalization.</p>
+                    <button onclick="startQuiz('DBMS & SQL')">Start Practice</button>
+                </article>
+
+                <article class="subject-card">
+                    <div class="emoji">⚙️</div>
+                    <h3>Operating Systems</h3>
+                    <p>Processes, threads and memory management.</p>
+                    <button onclick="startQuiz('Operating Systems')">Start Practice</button>
+                </article>
+
+                <article class="subject-card">
+                    <div class="emoji">🌐</div>
+                    <h3>Computer Networks</h3>
+                    <p>TCP/IP, HTTP and the OSI model.</p>
+                    <button onclick="startQuiz('Computer Networks')">Start Practice</button>
+                </article>
+
+                <article class="subject-card">
+                    <div class="emoji">🧠</div>
+                    <h3>Aptitude & Reasoning</h3>
+                    <p>Percentages, logic and number series.</p>
+                    <button onclick="startQuiz('Aptitude & Reasoning')">Start Practice</button>
+                </article>
+
+                <article class="subject-card">
+                    <div class="emoji">📝</div>
+                    <h3>Mock Tests</h3>
+                    <p>Practice a mixed-topic assessment.</p>
+                    <button onclick="startQuiz('Mock Tests')">Start Practice</button>
+                </article>
+            </div>
+        </section>
+    
+<section id="quizSetup" class="quiz-area" hidden>
+    <h2 id="setupTitle">Configure Your Quiz</h2>
+
+    <label for="difficulty">Choose Difficulty</label>
+    <select id="difficulty">
+        <option value="All">All Levels</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+
+    <label for="questionCount">Number of Questions</label>
+    <select id="questionCount">
+        <option value="10">10 Questions</option>
+        <option value="20">20 Questions</option>
+        <option value="30">30 Questions</option>
+    </select>
+
+    <div class="quiz-actions">
+        <button id="beginQuiz">Start Quiz</button>
+        <button id="cancelSetup" class="secondary-button">Cancel</button>
+    </div>
+</section>
+
+<section id="quizArea" class="quiz-area" hidden></section>
+    </main>
+
+    <footer>
+        <p>PrepTrack © 2026 | Learn today. Succeed tomorrow.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
